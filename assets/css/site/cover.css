@@ -32,6 +32,7 @@
 
 .has-serif-title .cover-description {
     font-family: var(--font-serif);
+    font-weight: 700;
 }
 
 @media (max-width: 460px) {
