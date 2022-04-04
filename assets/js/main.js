@@ -2,6 +2,7 @@ var body = $('body');
 
 $(function () {
     'use strict';
+    parallax();
     search();
     featured();
     video();
@@ -9,18 +10,20 @@ $(function () {
     mobileMenu();
 });
 
-document.addEventListener('lazyloaded', function (e) {
-    'use strict';
+function parallax() {
+    var image = $('.jarallax-img');
+    if (!image) return;
+
     var options = {
         disableParallax: /iPad|iPhone|iPod|Android/,
         disableVideo: /iPad|iPhone|iPod|Android/,
         speed: 0.1,
     };
 
-    if ($(e.target).parent('.site-cover').length) {
-        $(e.target).parent().jarallax(options).addClass('initialized');
-    }
-});
+    image.imagesLoaded(function () {
+        image.parent().jarallax(options).addClass('initialized');
+    });
+}
 
 function search() {
     'use strict';

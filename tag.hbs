@@ -3,18 +3,22 @@
 <div class="content-area">
     <main class="site-main">
         <div class="term container">
-            {{#tag}}
-                <h1 class="term-name">{{name}}</h1>
-                {{#if description}}
-                    <div class="term-description">{{description}}</div>
-                {{/if}}
-            {{/tag}}
+        {{#tag}}
+
+            <h1 class="term-name">{{name}}</h1>
+            {{#if description}}
+                <div class="term-description">{{description}}</div>
+            {{/if}}
+
+        {{/tag}}
         </div>
+
         <div class="post-feed container medium u-hover-wrapper">
             {{#foreach posts}}
-                {{> loop tag="h2"}}
+                {{> "loop"}}
             {{/foreach}}
         </div>
+
         {{pagination}}
     </main>
 </div>

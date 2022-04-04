@@ -26,6 +26,5 @@
 @import "blog/featured.css";
 @import "blog/related.css";
 @import "blog/comment.css";
-@import "vendor/lazyload.css";
 @import "vendor/owl.css";
 @import "vendor/mdi.css";
