@@ -34,7 +34,7 @@
     "Enter": "ghost-private/private.hbs",
     "Enter access code": "ghost-private/private.hbs",
     "Enter your email": "casper/post.hbs",
-    "Featured": "digest/index.hbs, journal/index.hbs, source/partials/components/featured.hbs",
+    "Featured": "digest/index.hbs, journal/index.hbs, source/partials/components/featured.hbs, source/partials/featured-posts.hbs",
     "Go to the front page →": "casper/error-404.hbs, casper/error.hbs",
     "Latest": "_shared/list.hbs, digest/index.hbs, episode/partials/components/list.hbs, headline/home.hbs, headline/index.hbs, journal/index.hbs, source/partials/components/post-list.hbs, taste/partials/components/list.hbs",
     "Latest episodes": "episode/home.hbs",
